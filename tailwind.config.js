@@ -1,0 +1,42 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  purge: ['./index.html', './src/**/*.{vue,js}'],
+  darkMode: 'class', // or 'media' or false
+  theme: {
+    extend: {
+      colors: {
+        gray: {
+          50:  '#f9f9f9',
+          100: '#efefef',
+          200:  '#cccccc',
+          300:  '#b6b6b6',
+          400:  '#d9d9d9',
+          500:  '#7d7d7d',
+          600:  '#686465',
+          700:  '#4d4948',
+          800:  '#323232',
+          900:  '#1c1c1c'
+        },
+        blue: {
+          500:  '#99ecff;',
+          700:  '#68e1fd;'
+        },
+      }
+    },
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
+    },
+  },
+  variants: {
+    extend: {
+      backgroundOpacity: ['dark']
+    }
+  },
+  plugins: [
+    // require('@tailwindcss/forms'),
+    // require('@tailwindcss/aspect-ratio'),
+    // require('@tailwindcss/typography'),
+    // require('tailwindcss-children'),
+  ],
+}
