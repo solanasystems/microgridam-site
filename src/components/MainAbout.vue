@@ -33,7 +33,7 @@ export default {
           <div class="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s">
             <!-- team block -->
             <div class="relative overflow-hidden px-6">
-              <img src="src/img/dummy/avatar1.png" class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image">
+              <img src="/src/assets/logo.svg" class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image">
             </div>
             <div class="pt-6 text-center">
               <p class="text-lg leading-normal font-bold mb-1">Joe Antonio</p>
@@ -65,7 +65,7 @@ export default {
           <!-- team block -->
           <div class="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
             <div class="relative overflow-hidden px-6">
-              <img src="src/img/dummy/avatar3.png" class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image">
+              <img src="/src/assets/logo.svg" class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image">
             </div>
             <div class="pt-6 text-center">
               <p class="text-lg leading-normal font-bold mb-1">Sarah Daeva</p>
@@ -97,7 +97,7 @@ export default {
           <!-- team block -->
           <div class="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
             <div class="relative overflow-hidden px-6">
-              <img src="src/img/dummy/avatar2.png" class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image">
+              <img src="/src/assets/logo.svg" class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image">
             </div>
             <div class="pt-6 text-center">
               <p class="text-lg leading-normal font-bold mb-1">Daniel Emo</p>
@@ -129,7 +129,7 @@ export default {
           <!-- team block -->
           <div class="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
             <div class="relative overflow-hidden px-6">
-              <img src="src/img/dummy/avatar4.png" class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image">
+              <img src="/src/assets/logo.svg" class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image">
             </div>
             <div class="pt-6 text-center">
               <p class="text-lg leading-normal font-bold mb-1">Toni Lana</p>

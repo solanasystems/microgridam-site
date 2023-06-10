@@ -20,7 +20,7 @@ export default {
       <div class="flex flex-wrap flex-row -mx-4 justify-center">
         <!-- content -->
         <div class="flex-shrink max-w-full px-4 sm:px-12 lg:px-18 w-full sm:w-9/12 lg:w-1/2 self-center">
-          <img src="src/img/dummy/hero.svg" class="w-full max-w-full h-auto" alt="creative agency">
+          <img src="/src/assets/hero.svg" class="w-full max-w-full h-auto" alt="creative agency">
         </div><!-- end content -->
 
         <!-- text -->
