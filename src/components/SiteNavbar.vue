@@ -1,6 +1,6 @@
 <style lang="css">
   .link-hover:hover {
-    border-bottom: 2px solid #2255aa;
+    border-bottom: 2px solid #94a3b8; /* slate-400 */
   }
 </style>
 <script>
@@ -25,12 +25,12 @@ export default {
         <div class="container xl:max-w-6xl mx-auto px-4">
           <div class="lg:flex lg:justify-between">
             <div class="flex justify-between">
-              <div class="mx-w-10 text-4xl font-bold capitalize text-gray-900 flex items-center">Micro Grid Solutions</div>
+              <div class="mx-w-10 text-4xl font-bold capitalize text-gray-900 flex items-center">Microgrid Solutions</div>
 
               <div class="flex flex-row items-center py-4 lg:py-0">
                 <div class="relative text-gray-900 hover:text-black block lg:hidden">
                   <button type="button" class="menu-mobile block py-3 px-6 border-b-2 border-transparent" v-on:click="toggleNavbar()">
-                    <span class="sr-only">Mobile menu</span>
+                    <span class="sr-only">Menu</span>
                     <font-awesome-icon :icon="['fas', 'bars']" />
                   </button>
                 </div>
@@ -43,16 +43,16 @@ export default {
                   <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#hero" v-smooth-scroll>Home</a>
                 </li>
                 <li class="relative hover:text-black">
-                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#services" v-smooth-scroll>Solutions</a>
+                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#solutions" v-smooth-scroll>Solutions</a>
                 </li>
                 <li class="relative hover:text-black">
                   <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#monitoring" v-smooth-scroll>Monitoring</a>
                 </li>
                 <li class="relative hover:text-black">
-                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#about" v-smooth-scroll>Team</a>
+                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#about" v-smooth-scroll>About Us</a>
                 </li>
                 <li class="relative hover:text-black">
-                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#connect" v-smooth-scroll>Connect</a>
+                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#contact" v-smooth-scroll>Contact Us</a>
                 </li>
               </ul>
             </div>
