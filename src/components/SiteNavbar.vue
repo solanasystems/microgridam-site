@@ -1,3 +1,8 @@
+<style lang="css">
+  .link-hover:hover {
+    border-bottom: 2px solid #2255aa;
+  }
+</style>
 <script>
 export default {
   name: "site-footer",
@@ -35,19 +40,19 @@ export default {
             <div v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="lg:flex flex-row">
               <ul class="navbar bg-white lg:bg-transparent w-full text-center lg:text-left lg:flex lg:flex-row text-gray-900 text-sm items-center font-bold">
                 <li class="relative hover:text-black">
-                  <a class="active block py-3 lg:py-7 px-6 border-b-2 border-transparent" href="#hero">Home</a>
+                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#hero" v-smooth-scroll>Home</a>
                 </li>
                 <li class="relative hover:text-black">
-                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent" href="#solutions">Solutions</a>
+                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#services" v-smooth-scroll>Solutions</a>
                 </li>
                 <li class="relative hover:text-black">
-                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent" href="#monitoring">Monitoring</a>
+                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#monitoring" v-smooth-scroll>Monitoring</a>
                 </li>
                 <li class="relative hover:text-black">
-                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent" href="#team">Team</a>
+                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#about" v-smooth-scroll>Team</a>
                 </li>
                 <li class="relative hover:text-black">
-                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent" href="#connect">Connect</a>
+                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#connect" v-smooth-scroll>Connect</a>
                 </li>
               </ul>
             </div>

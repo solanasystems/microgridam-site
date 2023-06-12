@@ -1,3 +1,13 @@
+<style lang="css">
+  .section-hr {
+    border-bottom: 2px solid #2255aa;
+    width: 75px;
+    margin: 0 auto;
+  }
+  .button-icon {
+    font-size: 1.5em;
+  }
+</style>
 <script setup>
 import { ref } from 'vue'
 import MainHero from './MainHero.vue'

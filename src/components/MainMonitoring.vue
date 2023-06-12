@@ -14,17 +14,12 @@ export default {
 </script>
 
 <template>
-  <!-- Portfolio Content -->
-    <div id="portfolio" class="section relative z-0 py-12 md:py-16 bg-white">
+    <div id="monitoring" class="section relative z-0 py-12 md:py-16 bg-white">
     <div class="container xl:max-w-6xl mx-auto px-4">
       <!-- Heading start -->
       <header class="text-center mx-auto mb-12 lg:px-20">
-        <h2 class="text-2xl leading-normal mb-2 font-bold text-black">Our work</h2>
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 60" style="margin: 0 auto;height: 35px;" xml:space="preserve">
-          <circle cx="50.1" cy="30.4" r="5" class="stroke-primary" style="fill: transparent;stroke-width: 2;stroke-miterlimit: 10;"></circle>
-          <line x1="55.1" y1="30.4" x2="100" y2="30.4" class="stroke-primary" style="stroke-width: 2;stroke-miterlimit: 10;"></line>
-          <line x1="45.1" y1="30.4" x2="0" y2="30.4" class="stroke-primary" style="stroke-width: 2;stroke-miterlimit: 10;"></line>
-        </svg>
+        <h2 class="text-2xl leading-normal mb-2 font-bold text-black">Monitoring</h2>
+        <div class="section-hr"></div>
         <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">We create engaging experiences that are innovatingand beautiful.</p>
       </header><!-- End heading -->
     </div>
