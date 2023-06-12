@@ -3,11 +3,15 @@ export default {
   name: "main-connect",
   data() {
     return {
-
+      reply_to: "info@microgridsolutions.energy",
+      access_key: "bac13424-b0a3-4e4d-b5f6-3e25e2497bb9",
     }
   },
   methods: {
-
+    send_message() {
+      console.log('Verify & Send');
+      
+    },
   }
 }
 
@@ -27,14 +31,17 @@ export default {
             </header><!-- end section header -->
 
             <!-- contact form -->
+            <!--form action="https://api.staticforms.xyz/submit" method="post"-->
             <form action="#">
+              <input type="hidden" name="accessKey" :value="access_key" />
+              <input type="hidden" name="replyTo" :value="reply_to" />
               <div class="flex flex-wrap flex-row -mx-4">
                 <div class="flex-shrink w-full max-w-full md:w-1/2 px-4 mb-6">
-                  <label class="inline-block mb-2" for="full_name">
+                  <label class="inline-block mb-2" for="name">
                     Your Name
                     <font-awesome-icon :icon="['fas', 'star-of-life']"></font-awesome-icon>
                   </label>
-                  <input type="text" class="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600" name="full_name" id="full_name">
+                  <input type="text" class="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600" name="name" id="name">
                   <div class="validate"></div>
                 </div>
                 <div class="flex-shrink w-full max-w-full md:w-1/2 px-4 mb-6">
@@ -54,7 +61,7 @@ export default {
                 </div>
                 <div class="flex-shrink w-full max-w-full md:w-1/2 px-4 mb-6">
                   <label class="inline-block mb-2" for="email">Address</label>
-                  <input type="text" class="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600" name="address" id="address">
+                  <input type="text" class="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600" name="$myCustomField1" id="address">
                   <div class="validate"></div>
                 </div>
               </div>
@@ -64,12 +71,13 @@ export default {
                 <div class="validate"></div>
               </div>
               <div class="mb-6">
-                <label class="inline-block mb-2" for="messages">Message</label>
-                <textarea class="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600" name="message" rows="10" id="messages"></textarea>
+                <label class="inline-block mb-2" for="message">Message</label>
+                <textarea class="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600" name="message" rows="10" id="message"></textarea>
                 <div class="validate"></div>
               </div>
+              <input type="text" name="honeypot" style="display: none;" />
               <div class="text-center mb-6">
-                <a class="py-2.5 px-10 inline-block text-center leading-normal text-gray-100 bg-black border border-black hover:text-white hover:ring-0 focus:outline-none focus:ring-0" href="#project">
+                <a class="py-2.5 px-10 inline-block text-center leading-normal text-gray-100 bg-black border border-black hover:text-white hover:ring-0 focus:outline-none focus:ring-0" href="#" @click="send_message">
                   <span class="button-icon"><font-awesome-icon :icon="['far', 'envelope']"></font-awesome-icon></span>
                   <span class="ml-3">Send Message</span>
                 </a>
