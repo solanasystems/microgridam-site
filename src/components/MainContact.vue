@@ -27,32 +27,26 @@ export default {
   methods: {
     send_message() {
       let $this = this;
-      console.log("Verify & Send");
       this.validate_form(true);
       if (!this.form.submit_valid)
         return;
-      console.log("Verified");
       this.form["$address"] = this.form.address;
       let request = JSON.stringify(this.form);
-      console.log("REQ", request);
       let options = {
         headers: {
           "Content-Type": "application/json"
         }
       };
       axios.post("https://api.staticforms.xyz/submit", request, options)
-        .then(function (response) {
+      .then(function (response) {
         console.log("Sent", response);
         $this.form.is_sent = true;
-      })
-        .catch(function (error) {
+      }).catch(function (error) {
         console.error("Send Error", error);
       });
-      // todo: add Success Message
     },
     validate_form(whole_form = false) {
       let name = this.form.name;
-      console.log("whole_form", whole_form);
       if (name || whole_form) {
         this.form.dirty = true;
         if (name.length >= 3) {
@@ -81,6 +75,11 @@ export default {
         }
       }
     },
+  },
+  mounted() {
+    this.emitter.on("landing_contact", subject => {
+      this.form.subject = subject;
+    });
   },
   watch: {
     "form.name": function (new_val) {

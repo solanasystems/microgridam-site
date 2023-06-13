@@ -8,18 +8,18 @@
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 export default {
-    name: "main-hero",
-    data() {
-        return {
-            showMenu: false
-        };
-    },
-    methods: {
-        toggleNavbar: function () {
-            this.showMenu = !this.showMenu;
-        }
-    },
-    components: { FontAwesomeIcon }
+  name: "main-hero",
+  data() {
+    return {
+      showMenu: false
+    };
+  },
+  methods: {
+    toggleNavbar: function () {
+      this.showMenu = !this.showMenu;
+    }
+  },
+  components: { FontAwesomeIcon }
 }
 </script>
 

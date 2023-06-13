@@ -5,13 +5,18 @@ import App from './App.vue'
 import FontAwesomeIcon from "./js/fontawesome-icons.js";
 import VueSmoothScroll from 'vue3-smooth-scroll'
 
-createApp(App)
+import mitt from 'mitt';
+const emitter = mitt();
+
+const app = createApp(App)
   .use(VueSmoothScroll, {
     offset: -100,
     updateHistory: false
   })
   .component('font-awesome-icon', FontAwesomeIcon)
-  .mount('#app')
+;
+app.config.globalProperties.emitter = emitter;
+app.mount('#app')
 
 
 
