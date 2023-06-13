@@ -2,98 +2,99 @@
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import axios from 'axios';
 export default {
-    name: "main-connect",
-    data() {
-        return {
-            form: {
-                dirty: false,
-                is_sent: false,
-                name_valid: true,
-                email_valid: true,
-                submit_valid: true,
-                replyTo: "@",
-                accessKey: "ab5c5cc5-5ffd-4562-9559-94b54d10f021",
-                honeypot: "",
-                name: "",
-                email: "",
-                phone: "",
-                address: "",
-                subject: "",
-                message: "",
-            }
-        };
+  name: "main-connect",
+  data() {
+    return {
+      mailto: "info@microgridsolutions.energy",
+      form: {
+        dirty: false,
+        is_sent: false,
+        name_valid: true,
+        email_valid: true,
+        submit_valid: true,
+        replyTo: "@",
+        accessKey: "ab5c5cc5-5ffd-4562-9559-94b54d10f021",
+        honeypot: "",
+        name: "",
+        email: "",
+        phone: "",
+        address: "",
+        subject: "",
+        message: "",
+      }
+    };
+  },
+  methods: {
+    send_message() {
+      let $this = this;
+      console.log("Verify & Send");
+      this.validate_form(true);
+      if (!this.form.submit_valid)
+        return;
+      console.log("Verified");
+      this.form["$address"] = this.form.address;
+      let request = JSON.stringify(this.form);
+      console.log("REQ", request);
+      let options = {
+        headers: {
+          "Content-Type": "application/json"
+        }
+      };
+      axios.post("https://api.staticforms.xyz/submit", request, options)
+        .then(function (response) {
+        console.log("Sent", response);
+        $this.form.is_sent = true;
+      })
+        .catch(function (error) {
+        console.error("Send Error", error);
+      });
+      // todo: add Success Message
     },
-    methods: {
-        send_message() {
-            let $this = this;
-            console.log("Verify & Send");
-            this.validate_form(true);
-            if (!this.form.submit_valid)
-                return;
-            console.log("Verified");
-            this.form["$address"] = this.form.address;
-            let request = JSON.stringify(this.form);
-            console.log("REQ", request);
-            let options = {
-                headers: {
-                    "Content-Type": "application/json"
-                }
-            };
-            axios.post("https://api.staticforms.xyz/submit", request, options)
-                .then(function (response) {
-                console.log("Sent", response);
-                $this.form.is_sent = true;
-            })
-                .catch(function (error) {
-                console.error("Send Error", error);
-            });
-            // todo: add Success Message
-        },
-        validate_form(whole_form = false) {
-            let name = this.form.name;
-            console.log("whole_form", whole_form);
-            if (name || whole_form) {
-                this.form.dirty = true;
-                if (name.length >= 3) {
-                    this.form.name_valid = true;
-                }
-                else {
-                    this.form.name_valid = false;
-                }
-            }
-            let email = this.form.email;
-            if (email || whole_form) {
-                this.form.dirty = true;
-                if (email.length >= 7 && email.includes("@") && email.includes(".")) {
-                    this.form.email_valid = true;
-                }
-                else {
-                    this.form.email_valid = false;
-                }
-            }
-            if (whole_form || !this.form.submit_valid) {
-                if (this.form.name && this.form.email && this.form.name_valid && this.form.email_valid) {
-                    this.form.submit_valid = true;
-                }
-                else {
-                    this.form.submit_valid = false;
-                }
-            }
-        },
+    validate_form(whole_form = false) {
+      let name = this.form.name;
+      console.log("whole_form", whole_form);
+      if (name || whole_form) {
+        this.form.dirty = true;
+        if (name.length >= 3) {
+          this.form.name_valid = true;
+        }
+        else {
+          this.form.name_valid = false;
+        }
+      }
+      let email = this.form.email;
+      if (email || whole_form) {
+        this.form.dirty = true;
+        if (email.length >= 7 && email.includes("@") && email.includes(".")) {
+          this.form.email_valid = true;
+        }
+        else {
+          this.form.email_valid = false;
+        }
+      }
+      if (whole_form || !this.form.submit_valid) {
+        if (this.form.name && this.form.email && this.form.name_valid && this.form.email_valid) {
+          this.form.submit_valid = true;
+        }
+        else {
+          this.form.submit_valid = false;
+        }
+      }
     },
-    watch: {
-        "form.name": function (new_val) {
-            if (!this.form.name_valid) {
-                this.validate_form();
-            }
-        },
-        "form.email": function (new_val) {
-            if (!this.form.email_valid) {
-                this.validate_form();
-            }
-        },
+  },
+  watch: {
+    "form.name": function (new_val) {
+      if (!this.form.name_valid) {
+        this.validate_form();
+      }
     },
-    components: { FontAwesomeIcon }
+    "form.email": function (new_val) {
+      if (!this.form.email_valid) {
+        this.validate_form();
+      }
+    },
+  },
+  components: { FontAwesomeIcon }
 }
 
 </script>
@@ -108,7 +109,7 @@ export default {
             <header class="text-center mx-auto mb-12 lg:px-20">
               <h2 class="text-2xl leading-normal mb-2 font-bold text-gray-800 dark:text-gray-100">Contact Us</h2>
               <div class="section-hr"></div>
-              <p class="text-gray-600 leading-relaxed font-light text-xl mx-auto pb-2">Have questions about our services? Contact us.</p>
+              <p class="text-gray-600 leading-relaxed font-light text-xl mx-auto pb-2">Have questions about our services? E-Mail us at <a :href="'mailto:' + mailto ">{{ mailto }}</a>.</p>
             </header><!-- end section header -->
 
             <!-- contact form -->
