@@ -25,7 +25,7 @@ export default {
         <div class="container xl:max-w-6xl mx-auto px-4">
           <div class="lg:flex lg:justify-between">
             <div class="flex justify-between">
-              <div class="mx-w-10 text-4xl font-bold capitalize text-gray-900 flex items-center">Microgrid Solutions</div>
+              <div class="mx-w-10 text-4xl font-bold capitalize text-gray-900 flex items-center">Microgrid Asset Management</div>
 
               <div class="flex flex-row items-center py-4 lg:py-0">
                 <div class="relative text-gray-900 hover:text-black block lg:hidden">

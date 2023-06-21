@@ -36,7 +36,7 @@ export default {
         <div class="flex-shrink max-w-full px-4 w-full md:w-9/12 lg:w-1/2 self-center lg:pr-12">
           <div class="text-center lg:text-left mt-6 lg:mt-0">
             <div class="mb-12">
-              <h1 class="text-4xl leading-normal text-black font-bold mb-4 text-slate-400">Control Your Energy, Control Your Future</h1>
+              <h1 class="text-4xl leading-normal text-black font-bold mb-4 text-slate-400">Control Your Energy,<br />Control Your Future</h1>
               <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2"><!-- subtext --></p>
             </div>
             <a class="py-2.5 px-10 inline-block text-center leading-normal text-gray-900 bg-white border-b border-gray-100 hover:text-slate-400 hover:ring-0 focus:outline-none focus:ring-0 mr-4" href="#solutions" v-smooth-scroll>

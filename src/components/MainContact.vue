@@ -5,7 +5,7 @@ export default {
   name: "main-connect",
   data() {
     return {
-      mailto: "info@microgridsolutions.energy",
+      mailto: "info@microgridam.com",
       form: {
         dirty: false,
         is_sent: false,
@@ -13,7 +13,7 @@ export default {
         email_valid: true,
         submit_valid: true,
         replyTo: "@",
-        accessKey: "ab5c5cc5-5ffd-4562-9559-94b54d10f021",
+        accessKey: "c92d6063-2963-4515-8346-e963b46b0174",
         honeypot: "",
         name: "",
         email: "",
