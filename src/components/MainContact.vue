@@ -5,7 +5,7 @@ export default {
   name: "main-connect",
   data() {
     return {
-      mailto: "info@microgridam.com",
+      mailto: "Info@MicrogridAM.com",
       form: {
         dirty: false,
         is_sent: false,
