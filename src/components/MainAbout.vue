@@ -19,12 +19,37 @@ export default {
       <header class="text-center mx-auto mb-12">
         <h2 class="text-2xl leading-normal mb-2 font-bold text-gray-800 dark:text-gray-100">About Us</h2>
         <div class="section-hr"></div>
-        <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">We deliver clean, reliable energy.</p>
       </header>
 
-      <div class="mb-20">
-        <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="">
+        <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">Microgrid Asset Management's mission is to provide reliable, sustainable, and affordable energy as a service to our customers. We do this by building and managing a portfolio of microgrids that use renewable energy sources. We are committed to expanding our portfolio of microgrids and to making our energy services more accessible to everyone.</p>
       </div>
+
+
+      <div class="flex flex-col justify-center items-center mb-20">
+
+        <div class="mt-10 block text-center">
+          <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">We believe in Reliability, Sustainability, and Affordability.</p>
+        </div>
+
+        <div class="mt-10 block text-center max-w-[500px]">
+          <h5 class="text-lg leading-normal mb-2 font-semibold text-black">Reliability</h5>
+          <p class="mb-4 text-base text-gray-500">We are committed to providing reliable energy to our customers. This is important because microgrids can provide backup power during outages, which is critical for businesses and communities.</p>
+        </div>
+
+        <div class="mt-10 block text-center max-w-[500px]">
+          <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Sustainability</h3>
+          <p class="text-gray-500">We use renewable energy sources to generate and store power, which is vital for the environment by helping reduce company's carbon footprint.</p>
+        </div>
+
+        <div class="mt-10 block text-center max-w-[500px]">
+          <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Affordability</h3>
+          <p class="text-gray-500">We are committed to making its energy services affordable for everyone. We believe that energy is a basic necessity, and everyone should have access to it.</p>
+        </div>
+      </div>
+
+
 
       <!-- staff -->
       <!--div class="flex flex-wrap flex-row -mx-4 justify-center">
