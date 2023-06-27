@@ -15,7 +15,7 @@ export default {
         {
           name: "David Sperling",
           title: "{Title}",
-          image: "person.svg"
+          image: "david.sperling.jpeg"
         },
         {
           name: "Rett Anderson",
@@ -25,12 +25,12 @@ export default {
         {
           name: "Joe Dickson",
           title: "{Title}",
-          image: "person.svg"
+          image: "joe.dickson.jpeg"
         },
         {
           name: "Paul Pavone",
           title: "{Title}",
-          image: "person.svg"
+          image: "paul.pavone.jpeg"
         },
         {
           name: "Brad Phillips",
@@ -45,7 +45,7 @@ export default {
         {
           name: "Matthew Taylor",
           title: "{Title}",
-          image: "mt.jpeg"
+          image: "matthew.taylor.jpeg"
         }
       ],
       all_partners: [
