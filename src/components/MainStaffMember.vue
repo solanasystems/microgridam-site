@@ -13,7 +13,7 @@ export default {
   computed: {
     image_url() {
       let img = this.staff.image ? this.staff.image : this.default_image;
-      return `/src/assets/staff/${img}`;
+      return `/staff/${img}`;
     }
   },
   methods: {

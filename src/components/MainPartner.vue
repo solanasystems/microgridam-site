@@ -11,7 +11,7 @@ export default {
   computed: {
     image_url() {
       let img = this.partner.logo;
-      return `/src/assets/partners/${img}`;
+      return `/partners/${img}`;
     }
   },
   methods: {
