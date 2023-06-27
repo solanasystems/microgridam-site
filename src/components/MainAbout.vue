@@ -1,9 +1,65 @@
+<style lang="css">
+  .partner-logo {
+    max-width: 200px;
+  }
+</style>
 <script>
+import MainStaffMember from './MainStaffMember.vue';
+import MainPartner from './MainPartner.vue';
 export default {
   name: "main-about",
+  components: { MainStaffMember, MainPartner },
   data() {
     return {
-
+      all_staff: [
+        {
+          name: "David Sperling",
+          title: "{Title}",
+          image: "person.svg"
+        },
+        {
+          name: "Rett Anderson",
+          title: "{Title}",
+          image: "person.svg"
+        },
+        {
+          name: "Joe Dickson",
+          title: "{Title}",
+          image: "person.svg"
+        },
+        {
+          name: "Paul Pavone",
+          title: "{Title}",
+          image: "person.svg"
+        },
+        {
+          name: "Brad Phillips",
+          title: "{Title}",
+          image: "person.svg"
+        },
+        {
+          name: "Joseph Morris",
+          title: "{Title}",
+          image: "person.svg"
+        },
+        {
+          name: "Matthew Taylor",
+          title: "{Title}",
+          image: "mt.jpeg"
+        }
+      ],
+      all_partners: [
+        {
+          name: "Clean Energy Japan",
+          url: "https://cleanenergyjapan.jp",
+          logo: "cej.png"
+        },
+        {
+          name: "Ducted Wind Turbines",
+          url: "https://www.ductedwind.com",
+          logo: "ductedwind.png"
+        }
+      ]
     }
   },
   methods: {
@@ -22,85 +78,31 @@ export default {
         <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">We deliver clean, reliable energy.</p>
       </header>
 
-      <div class="">
+      <div class="mb-10">
         <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">Microgrid Asset Management's mission is to provide reliable, sustainable, and affordable energy as a service to our customers. We do this by building and managing a portfolio of microgrids that use renewable energy sources. We are committed to expanding our portfolio of microgrids and to making our energy services more accessible to everyone.</p>
-      </div>
-
-
-      <div class="flex flex-col justify-center items-center mb-20">
-
-        <div class="mt-10 block text-center">
-          <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">We believe in Reliability, Sustainability, and Affordability.</p>
-        </div>
-
-        <div class="mt-10 block text-center max-w-[500px]">
-          <h5 class="text-lg leading-normal mb-2 font-semibold text-black">Reliability</h5>
-          <p class="mb-4 text-base text-gray-500">We are committed to providing reliable energy to our customers. This is important because microgrids can provide backup power during outages, which is critical for businesses and communities.</p>
-        </div>
-
-        <div class="mt-10 block text-center max-w-[500px]">
-          <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Sustainability</h3>
-          <p class="text-gray-500">We use renewable energy sources to generate and store power, which is vital for the environment by helping reduce company's carbon footprint.</p>
-        </div>
-
-        <div class="mt-10 block text-center max-w-[500px]">
-          <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Affordability</h3>
-          <p class="text-gray-500">We are committed to making its energy services affordable for everyone. We believe that energy is a basic necessity, and everyone should have access to it.</p>
-        </div>
       </div>
 
 
 
       <!-- staff -->
-      <!--div class="flex flex-wrap flex-row -mx-4 justify-center">
-        <div class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
-          <div class="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s">
-            <div class="relative overflow-hidden px-6">
-              <img src="/src/assets/logo.svg" class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image">
-            </div>
-            <div class="pt-6 text-center">
-              <p class="text-lg leading-normal font-bold mb-1">John Doe</p>
-              <p class="text-gray-500 leading-relaxed font-light">Founder CEO</p>
-            </div>
-          </div>
-        </div>
+      <header class="text-center mx-auto mb-12">
+        <h2 class="text-2xl leading-normal mb-2 font-bold text-gray-800 dark:text-gray-100">Our Team</h2>
+      </header>
 
-        <div class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
-          <div class="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-            <div class="relative overflow-hidden px-6">
-              <img src="/src/assets/logo.svg" class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image">
-            </div>
-            <div class="pt-6 text-center">
-              <p class="text-lg leading-normal font-bold mb-1">John Doe</p>
-              <p class="text-gray-500 leading-relaxed font-light">Marketing</p>
-            </div>
-          </div>
-        </div>
+      <div class="flex flex-wrap flex-row -mx-4 justify-center mb-10">
+        <main-staff-member v-for="staff in all_staff" :staff="staff"></main-staff-member>
+      </div><!-- end staff -->
 
-        <div class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
-          <div class="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-            <div class="relative overflow-hidden px-6">
-              <img src="/src/assets/logo.svg" class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image">
-            </div>
-            <div class="pt-6 text-center">
-              <p class="text-lg leading-normal font-bold mb-1">John Doe</p>
-              <p class="text-gray-500 leading-relaxed font-light">Sales manager</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
-          <div class="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-            <div class="relative overflow-hidden px-6">
-              <img src="/src/assets/logo.svg" class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image">
-            </div>
-            <div class="pt-6 text-center">
-              <p class="text-lg leading-normal font-bold mb-1">Jane Doe</p>
-              <p class="text-gray-500 leading-relaxed font-light">UI/UX Designer</p>
-            </div>
-          </div>
-        </div>
-      </div--><!-- end staff -->
+      <!-- partners -->
+      <header class="text-center mx-auto mb-12">
+        <h2 class="text-2xl leading-normal mb-2 font-bold text-gray-800 dark:text-gray-100">Partners</h2>
+      </header>
+
+      <div class="flex flex-wrap flex-row -mx-4 justify-center mb-20">
+        <main-partner v-for="partner in all_partners" :partner="partner"></main-partner>
+      </div><!-- end partners -->
+
 
     </div><!-- end container -->
   </div><!-- End Team-->

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import axios from 'axios';
 export default {
   name: "main-connect",
+  components: { FontAwesomeIcon },
   data() {
     return {
       mailto: "Info@MicrogridAM.com",
@@ -93,7 +94,6 @@ export default {
       }
     },
   },
-  components: { FontAwesomeIcon }
 }
 
 </script>
@@ -103,8 +103,8 @@ export default {
     <div class="container xl:max-w-6xl mx-auto px-4">
       <div class="flex flex-wrap flex-row -mx-4 justify-center">
         <div class="max-w-ful px-4 w-full lg:w-8/12">
-          <div class="bg-gray-50 border-b border-gray-100 w-full p-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-            <!-- section header -->
+          <div class="bg-gray-50 border-b border-gray-100 w-full p-12">
+
             <header class="text-center mx-auto mb-12 lg:px-20">
               <h2 class="text-2xl leading-normal mb-2 font-bold text-gray-800 dark:text-gray-100">Contact Us</h2>
               <div class="section-hr"></div>
@@ -112,7 +112,7 @@ export default {
             </header><!-- end section header -->
 
             <!-- contact form -->
-            <form action="javascript://" :class="{'hidden': form.is_sent}">
+            <form action="javascript://" class="mb-10" :class="{'hidden': form.is_sent}">
               <input type="hidden" name="accessKey" :value="form.accessKey" />
               <input type="hidden" name="replyTo" :value="form.replyTo" />
               <input type="text" name="honeypot" class="hidden" v-model="form.honeypot" />
@@ -157,7 +157,7 @@ export default {
                 <div class="text-red-500 text-xs italic" :class="{'hidden': form.dirty && !form.message}"></div>
               </div>
               <div class="text-center mb-6">
-                <a class="py-2.5 px-10 inline-block text-center leading-normal text-gray-100 bg-black border border-black hover:text-white hover:text-slate-400 hover:ring-0 focus:outline-none focus:ring-0" href="javascript://" @click="send_message">
+                <a class="py-2.5 px-10 inline-block text-center leading-normal text-gray-100 bg-black border-b border-gray-800 hover:text-slate-400 hover:ring-0 focus:outline-none focus:ring-0" href="javascript://" @click="send_message">
                   <span class="button-icon"><font-awesome-icon :icon="['far', 'envelope']"></font-awesome-icon></span>
                   <span class="ml-3">Contact Us</span>
                   <div class="text-red-500 text-xs italic" :class="{'hidden': form.submit_valid}">Please complete the form.</div>
@@ -165,7 +165,7 @@ export default {
               </div>
             </form><!-- end contact form -->
 
-            <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert" :class="{'hidden': !form.is_sent}">
+            <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md mb-20" role="alert" :class="{'hidden': !form.is_sent}">
               <div class="flex">
                 <div class="py-1 mr-3">
                   <font-awesome-icon :icon="['far', 'circle-check']" size="2x"></font-awesome-icon>
@@ -176,6 +176,35 @@ export default {
                 </div>
               </div>
             </div>
+
+
+            <!-- phone -->
+            <div class="mb-10">
+              <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Call Us</h3>
+              <div><font-awesome-icon :icon="['fas', 'phone']"></font-awesome-icon> (518) 420-7592</div>
+            </div>
+
+            <!-- Addresses -->
+            <div class="mb-10">
+              <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Office Locations</h3>
+              <div class="flex flex-wrap flex-row -mx-2">
+
+                <div class="flex-shrink px-4 max-w-full w-full md:w-1/2 mb-5">
+                  <font-awesome-icon :icon="['fas', 'location-pin']"></font-awesome-icon> <strong>West Coast</strong><br />
+                    1666 South Pacific Coast Highway<br />
+                    Suite 200<br />
+                    Redondo Beach, CA 90277
+                </div>
+
+                <div class="flex-shrink px-4 max-w-full w-full md:w-1/2 mb-5">
+                  <font-awesome-icon :icon="['fas', 'location-pin']"></font-awesome-icon> <strong>East Coast</strong><br />
+                    1666 South Pacific Coast Highway<br />
+                    Suite 200<br />
+                    Redondo Beach, CA 90277
+                </div>
+
+              </div>
+            </div><!-- end addresses section -->
 
           </div>
         </div>

@@ -2,6 +2,9 @@
   .link-hover:hover {
     border-bottom: 2px solid #94a3b8; /* slate-400 */
   }
+  .nav-logo {
+    max-width: 500px;
+  }
 </style>
 <script>
 export default {
@@ -25,7 +28,9 @@ export default {
         <div class="container xl:max-w-6xl mx-auto px-4">
           <div class="lg:flex lg:justify-between">
             <div class="flex justify-between">
-              <div class="mx-w-10 text-4xl font-bold capitalize text-gray-900 flex items-center">Microgrid Asset Management</div>
+              <div class="mx-w-10 text-4xl font-bold capitalize text-gray-900 flex items-center">
+                <img src="src/assets/logo_wide_sample.png" title="Microgrid Asset Management" class="nav-logo" />
+              </div>
 
               <div class="flex flex-row items-center py-4 lg:py-0">
                 <div class="relative text-gray-900 hover:text-black block lg:hidden">

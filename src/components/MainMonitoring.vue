@@ -26,29 +26,9 @@ export default {
 
       <div class="flex flex-wrap flex-row -mx-4 text-center">
 
-        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-6 wow fadeInUp" data-wow-duration="1s">
-          <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 cursor-pointer" @click="goto('Monitoring')" href="#contact" v-smooth-scroll>
-            <div class="inline-block text-slate-500 mb-4">
-              <font-awesome-icon :icon="['fas', 'chart-line']" size="3x"></font-awesome-icon>
-            </div>
-            <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Monitoring</h3>
-            <p class="text-gray-500">Track your Energy Production.</p>
-          </div>
-        </div>
-
-        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-          <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 cursor-pointer" @click="goto('Security')" href="#contact" v-smooth-scroll>
-            <div class="inline-block text-slate-500 mb-4">
-              <font-awesome-icon :icon="['fas', 'video']" size="3x"></font-awesome-icon>
-            </div>
-            <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Security</h3>
-            <p class="text-gray-500">Cameras with human presence detection alerts.</p>
-          </div>
-        </div>
-
-        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-6">
           <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 cursor-pointer" @click="goto('Online Dashboard')" href="#contact" v-smooth-scroll>
-            <div class="inline-block text-slate-500 mb-4">
+            <div class="inline-block brand-color mb-4">
               <font-awesome-icon :icon="['fas', 'display']" size="3x"></font-awesome-icon>
             </div>
             <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Online Dashboard</h3>
@@ -56,9 +36,29 @@ export default {
           </div>
         </div>
 
-        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-6">
+          <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 cursor-pointer" @click="goto('Monitoring')" href="#contact" v-smooth-scroll>
+            <div class="inline-block brand-color mb-4">
+              <font-awesome-icon :icon="['fas', 'chart-line']" size="3x"></font-awesome-icon>
+            </div>
+            <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Monitoring</h3>
+            <p class="text-gray-500">Track your Energy Production.</p>
+          </div>
+        </div>
+
+        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-6">
+          <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 cursor-pointer" @click="goto('Security')" href="#contact" v-smooth-scroll>
+            <div class="inline-block brand-color mb-4">
+              <font-awesome-icon :icon="['fas', 'video']" size="3x"></font-awesome-icon>
+            </div>
+            <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Security</h3>
+            <p class="text-gray-500">Cameras with A.I. human presence detection alerts.</p>
+          </div>
+        </div>
+
+        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-6">
           <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 cursor-pointer" @click="goto('Notifications')" href="#contact" v-smooth-scroll>
-            <div class="inline-block text-slate-500 mb-4">
+            <div class="inline-block brand-color mb-4">
               <font-awesome-icon :icon="['fas', 'bell']" size="3x"></font-awesome-icon>
             </div>
             <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Notifications</h3>
@@ -81,7 +81,7 @@ export default {
           </div>
         </figure>
 
-        <figure class="flex-shrink max-w-full px-3 w-full sm:w-1/2 lg:w-1/5 group wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+        <figure class="flex-shrink max-w-full px-3 w-full sm:w-1/2 lg:w-1/5 group>>
           <div class="relative overflow-hidden cursor-pointer mb-6">
             <a href="/src/assets/logo.svg" data-gallery="gallery1" data-glightbox="title: My title; description: This is a wider card with supporting text below as a natural lead-in to additional content" class="glightbox3">
               <img class="block w-full h-auto transform duration-500 grayscale hover:scale-125" src="/src/assets/logo.svg" alt="Image Description">
