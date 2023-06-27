@@ -1,9 +1,32 @@
 <script>
+import MainSolutionCard from './MainSolutionCard.vue';
 export default {
   name: "main-monitoring",
+  components: {MainSolutionCard},
   data() {
     return {
-
+      solutions: [
+        {
+          title: "Online Dashboard",
+          icon: ['fas', 'display'],
+          description: "Secure Dashboard for monitoring your Microgrid Sites.",
+        },
+        {
+          title: "Monitoring",
+          icon: ['fas', 'chart-line'],
+          description: "Track your Energy Production.",
+        },
+        {
+          title: "Security",
+          icon: ['fas', 'video'],
+          description: "Cameras with A.I. human presence detection alerts.",
+        },
+        {
+          title: "Notifications",
+          icon: ['fas', 'bell'],
+          description: "Customizable alerts for system operations and security.",
+        },
+      ],
     }
   },
   methods: {
@@ -26,45 +49,7 @@ export default {
 
       <div class="flex flex-wrap flex-row -mx-4 text-center">
 
-        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-6">
-          <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 cursor-pointer" @click="goto('Online Dashboard')" href="#contact" v-smooth-scroll>
-            <div class="inline-block brand-color mb-4">
-              <font-awesome-icon :icon="['fas', 'display']" size="3x"></font-awesome-icon>
-            </div>
-            <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Online Dashboard</h3>
-            <p class="text-gray-500">Secure Dashboard for monitoring your Microgrid Sites.</p>
-          </div>
-        </div>
-
-        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-6">
-          <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 cursor-pointer" @click="goto('Monitoring')" href="#contact" v-smooth-scroll>
-            <div class="inline-block brand-color mb-4">
-              <font-awesome-icon :icon="['fas', 'chart-line']" size="3x"></font-awesome-icon>
-            </div>
-            <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Monitoring</h3>
-            <p class="text-gray-500">Track your Energy Production.</p>
-          </div>
-        </div>
-
-        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-6">
-          <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 cursor-pointer" @click="goto('Security')" href="#contact" v-smooth-scroll>
-            <div class="inline-block brand-color mb-4">
-              <font-awesome-icon :icon="['fas', 'video']" size="3x"></font-awesome-icon>
-            </div>
-            <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Security</h3>
-            <p class="text-gray-500">Cameras with A.I. human presence detection alerts.</p>
-          </div>
-        </div>
-
-        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-6">
-          <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 cursor-pointer" @click="goto('Notifications')" href="#contact" v-smooth-scroll>
-            <div class="inline-block brand-color mb-4">
-              <font-awesome-icon :icon="['fas', 'bell']" size="3x"></font-awesome-icon>
-            </div>
-            <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Notifications</h3>
-            <p class="text-gray-500">Customizable alerts for system operations and security.</p>
-          </div>
-        </div>
+        <main-solution-card v-for="info in solutions" :info="info" size_classes="w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6" />
 
       </div><!-- end row -->
 

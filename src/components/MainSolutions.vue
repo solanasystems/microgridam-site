@@ -1,9 +1,49 @@
 <script>
+import MainSolutionCard from './MainSolutionCard.vue';
 export default {
   name: "main-solutions",
+  components: {MainSolutionCard},
   data() {
     return {
-
+      offerings: [
+        {
+          title: "Solar Power",
+          icon: ['fas', 'solar-panel'],
+          description: "We offer customized solar arrays based on your power usage and capacity."
+        },
+        {
+          title: "Wind Power",
+          icon: ['fas', 'wind'],
+          description: "Choose your desired turbine size based on your needs.",
+        },
+        {
+          title: "Battery Storage",
+          icon: ['fas', 'battery-full'],
+          description: "Use your Energy when you need it.  Keep your business running in the event of a grid outage.",
+        },
+        {
+          title: "Energy Efficiency",
+          icon: ['fas', 'magnifying-glass-chart'],
+          description: "We can make sure that your facility is as energy efficient as possible to minimize energy waste.",
+        },
+      ],
+      solutions: [
+        {
+          title: "System Ownership",
+          icon: ['far', 'lightbulb'],
+          description: "Make an upfront investment and take advantage of the new Inflation Reduction Act (IRA) government incentives.",
+        },
+        {
+          title: "Financing Options",
+          icon: ['fas', 'building-columns'],
+          description: "Explore tailored financial portfolios designed to meet your energy goals.",
+        },
+        {
+          title: "Energy As A Service (EAAS)",
+          icon: ['fas', 'bolt'],
+          description: "This no money down option allows you to purchase energy at a predetermined cost per kW for your next 20 years.",
+        },
+      ],
     }
   },
   methods: {
@@ -23,41 +63,17 @@ export default {
         <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2"><!-- subtext --></p>
       </header>
 
-      <!-- row -->
+      <!-- offering cards -->
       <div class="flex flex-wrap flex-row -mx-4 text-center">
+        <main-solution-card v-for="info in offerings" :info="info" size_classes="sm:w-1/2 lg:w-1/4 lg:px-6" />
+      </div>
 
-        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6">
-          <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 cursor-pointer" @click="goto('System Ownership')" href="#contact" v-smooth-scroll>
-            <div class="inline-block brand-color mb-4">
-              <font-awesome-icon :icon="['far', 'lightbulb']" size="3x"></font-awesome-icon>
-            </div>
-            <h3 class="text-lg leading-normal mb-2 font-semibold text-black">System Ownership</h3>
-            <p class="text-gray-500">Make an upfront investment and take advantage of the new Inflation Reduction Act (IRA) government incentives.</p>
-          </div>
-        </div>
-
-        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6">
-          <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 cursor-pointer" @click="goto('Financing Options')" href="#contact" v-smooth-scroll>
-            <div class="inline-block brand-color mb-4">
-              <font-awesome-icon :icon="['fas', 'building-columns']" size="3x"></font-awesome-icon>
-            </div>
-            <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Financing Options</h3>
-            <p class="text-gray-500">Explore tailored financial portfolios designed to meet your energy goals.</p>
-          </div>
-        </div>
-
-        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6">
-          <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 cursor-pointer" @click="goto('Energy As A Service')" href="#contact" v-smooth-scroll>
-            <div class="inline-block brand-color mb-4">
-              <font-awesome-icon :icon="['fas', 'bolt']" size="3x"></font-awesome-icon>
-            </div>
-            <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Energy As A Service (EAAS)</h3>
-            <p class="text-gray-500">This no money down option allows you to purchase energy at a predetermined cost per kW for your next 20 years.</p>
-          </div>
-        </div>
-
-      </div><!-- end row -->
+      <!-- solution cards -->
+      <div class="flex flex-wrap flex-row -mx-4 text-center">
+        <main-solution-card v-for="info in solutions" :info="info" size_classes="sm:w-1/2 lg:w-1/3 lg:px-6" />
+      </div>
 
     </div> <!-- end container -->
+
   </div><!-- End Solutions -->
 </template>
