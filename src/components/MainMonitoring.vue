@@ -30,9 +30,7 @@ export default {
     }
   },
   methods: {
-    goto(subject) {
-      this.emitter.emit('landing_contact', subject);
-    },
+
   }
 }
 
