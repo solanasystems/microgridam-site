@@ -29,7 +29,7 @@ export default {
           <div class="lg:flex lg:justify-between">
             <div class="flex justify-between">
               <div class="mx-w-10 text-4xl font-bold capitalize text-gray-900 flex items-center">
-                <img src="src/assets/logo_wide_sample.png" title="Microgrid Asset Management" class="nav-logo" />
+                <img src="/src/assets/logo_wide_sample.png" title="Microgrid Asset Management" class="nav-logo" />
               </div>
 
               <div class="flex flex-row items-center py-4 lg:py-0">
