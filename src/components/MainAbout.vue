@@ -78,6 +78,10 @@ export default {
         <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">We deliver clean, reliable energy.</p>
       </header>
 
+      <div class="flex flex-wrap flex-row -mx-4 justify-center mb-10">
+        <img src="/src/assets/logo_square.svg" class="justify-center" style="max-width: 350px;" />
+      </div>
+
       <div class="mb-10">
         <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">Microgrid Asset Management's mission is to provide reliable, sustainable, and affordable energy as a service to our customers. We do this by building and managing a portfolio of microgrids that use renewable energy sources. We are committed to expanding our portfolio of microgrids and to making our energy services more accessible to everyone.</p>
       </div>
