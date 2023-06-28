@@ -62,12 +62,12 @@ export default {
       </header>
 
       <!-- offering cards -->
-      <div class="flex flex-wrap flex-row -mx-4 text-center">
+      <div class="flex flex-wrap flex-row -mx-4 text-center justify-center ">
         <main-solution-card v-for="info in offerings" :info="info" size_classes="sm:w-1/2 lg:w-1/4 lg:px-6" />
       </div>
 
       <!-- solution cards -->
-      <div class="flex flex-wrap flex-row -mx-4 text-center">
+      <div class="flex flex-wrap flex-row -mx-4 text-center justify-center ">
         <main-solution-card v-for="info in solutions" :info="info" size_classes="sm:w-1/2 lg:w-1/3 lg:px-6" />
       </div>
 

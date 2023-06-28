@@ -58,7 +58,7 @@ export default {
           <div class="flex-shrink px-4 max-w-full w-full sm:w-2/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s">
             <div class="py-8 px-12">
               <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Reliability</h3>
-              <p class="text-gray-500">We are committed to providing reliable energy to our customers. This is important because microgrids can provide backup power during outages, which is critical for businesses and communities.</p>
+              <p class="text-gray-500">We are committed to providing reliable energy to our customers. With a microgrid, you can prepare for power outages by gaining energy security and independence. This is critical for businesses and communities to continue operating during unforeseen grid outages.</p>
             </div>
           </div>
 

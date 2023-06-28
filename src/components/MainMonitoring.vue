@@ -45,7 +45,7 @@ export default {
         <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">Keep track of your Microgrid Energy Production & Security.</p>
       </header>
 
-      <div class="flex flex-wrap flex-row -mx-4 text-center">
+      <div class="flex flex-wrap flex-row -mx-4 text-center justify-center">
 
         <main-solution-card v-for="info in solutions" :info="info" size_classes="w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6" />
 
