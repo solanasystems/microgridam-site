@@ -46,7 +46,7 @@ export default {
           name: "Matthew Taylor",
           title: "{Title}",
           image: "matthew.taylor.jpeg"
-        }
+        },
       ],
       all_partners: [
         {
@@ -58,7 +58,12 @@ export default {
           name: "Ducted Wind Turbines",
           url: "https://www.ductedwind.com",
           logo: "ductedwind.png"
-        }
+        },
+        {
+          name: "Castle Energy",
+          url: "https://www.castlenrg.com/",
+          logo: "castleenergy.png"
+        },
       ]
     }
   },
