@@ -32,7 +32,8 @@ export default {
       </div>
       <div class="pt-6 text-center">
         <p class="text-lg leading-normal font-bold mb-1">{{ staff.name }}</p>
-        <p class="text-gray-500 leading-relaxed font-light">{{ staff.title }}</p>
+        <p class="text-gray-500 leading-relaxed font-light">{{ staff.location }}</p>
+        <p class="text-gray-500 leading-relaxed font-light">{{ staff.phone }}</p>
       </div>
     </div>
   </div>

@@ -198,9 +198,8 @@ export default {
 
                 <div class="flex-shrink px-4 max-w-full w-full md:w-1/2 mb-5">
                   <font-awesome-icon :icon="['fas', 'location-pin']"></font-awesome-icon> <strong>East Coast</strong><br />
-                    1666 South Pacific Coast Highway<br />
-                    Suite 200<br />
-                    Redondo Beach, CA 90277
+                    235 Harrison St.<br />
+                    Syracuse, NY 13202
                 </div>
 
               </div>

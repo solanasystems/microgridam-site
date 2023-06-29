@@ -14,38 +14,45 @@ export default {
       all_staff: [
         {
           name: "David Sperling",
-          title: "{Title}",
-          image: "david.sperling.jpeg"
+          location: "Japan",
+          image: "david.sperling.jpeg",
+          phone: "",
         },
         {
           name: "Rett Anderson",
-          title: "{Title}",
-          image: "person.svg"
+          location: "Japan",
+          image: "rett.anderson.jpeg",
+          phone: "",
         },
         {
           name: "Joe Dickson",
-          title: "{Title}",
-          image: "joe.dickson.jpeg"
+          location: "New York",
+          image: "joe.dickson.jpeg",
+          phone: "+1 (315) 882-2409",
         },
         {
           name: "Paul Pavone",
-          title: "{Title}",
-          image: "paul.pavone.jpeg"
+          location: "New York",
+          image: "paul.pavone.jpeg",
+          phone: "+1 (518) 420-7592",
         },
         {
           name: "Brad Phillips",
-          title: "{Title}",
-          image: "person.svg"
+          location: "New York",
+          image: "brad.phillips.jpeg",
+          phone: "+1 (518) 420-9430",
         },
         {
           name: "Joseph Morris",
-          title: "{Title}",
-          image: "person.svg"
+          location: "California / Japan",
+          image: "person.svg",
+          phone: "",
         },
         {
           name: "Matthew Taylor",
-          title: "{Title}",
-          image: "matthew.taylor.jpeg"
+          location: "California",
+          image: "matthew.taylor.jpeg",
+          phone: "+1 (951) 315-6113",
         },
       ],
       all_partners: [
