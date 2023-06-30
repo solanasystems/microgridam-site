@@ -1,6 +1,7 @@
 <style type="css">
-  .landscape-img {
-    min-width: 300px;
+  .spotlight img {
+    width: 300px;
+    height: 300px;
   }
 </style>
 <script>
@@ -21,27 +22,23 @@ export default {
         {
           title: "Ducted Wind Turbine",
           src: "/showcase/ducted_wind_d3.jpeg",
-          landscape: false,
         },
         {
           title: "442 Wind Turbine",
           src: "/showcase/442_solar.jpeg",
-          landscape: false,
         },
         {
           title: "Ducted Wind Turbine",
           src: "/showcase/ductedwind_hq.jpeg",
-          landscape: true,
+          position: 'object-left-top',
         },
         {
           title: "Solar 50kWh",
           src: "/showcase/2532_50kWh.jpeg",
-          landscape: true,
         },
         {
           title: "Solar 500kWh",
           src: "/showcase/2776_500kWh.jpeg",
-          landscape: true,
         },
       ],
       index: null,
