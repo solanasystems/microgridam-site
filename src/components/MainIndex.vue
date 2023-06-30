@@ -14,6 +14,7 @@ import MainHero from './MainHero.vue'
 import MainSolutions from './MainSolutions.vue'
 import MainMonitoring from './MainMonitoring.vue'
 import MainAbout from './MainAbout.vue'
+import MainShowcase from './MainShowcase.vue'
 import MainContact from './MainContact.vue'
 
 </script>
@@ -23,6 +24,7 @@ import MainContact from './MainContact.vue'
     <main-hero/>
     <main-solutions/>
     <main-monitoring/>
+    <main-showcase/>
     <main-about/>
     <main-contact/>
   </main>

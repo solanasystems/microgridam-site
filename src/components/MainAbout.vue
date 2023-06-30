@@ -91,7 +91,7 @@ export default {
       </header>
 
       <div class="flex flex-wrap flex-row -mx-4 justify-center mb-10">
-        <img src="/src/assets/logo_square.svg" class="justify-center" style="max-width: 350px;" />
+        <img src="/logo_square.svg" class="justify-center" style="max-width: 350px;" />
       </div>
 
       <div class="mb-10">

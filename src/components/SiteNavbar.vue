@@ -2,9 +2,6 @@
   .link-hover:hover {
     border-bottom: 2px solid #94a3b8; /* slate-400 */
   }
-  .nav-logo {
-    max-width: 500px;
-  }
 </style>
 <script>
 export default {
@@ -25,11 +22,11 @@ export default {
 <template>
   <header class="fixed top-0 left-0 right-0 z-40 bg-gray-50">
       <nav class="main-nav">
-        <div class="container xl:max-w-6xl mx-auto px-4">
+        <div class="container xl:max-w-7xl mx-auto px-4">
           <div class="lg:flex lg:justify-between">
             <div class="flex justify-between">
-              <div class="mx-w-10 text-4xl font-bold capitalize text-gray-900 flex items-center">
-                <img src="/src/assets/logo_wide.svg" title="Microgrid Asset Management" class="nav-logo" />
+              <div class="text-4xl font-bold capitalize text-gray-900 flex items-center">
+                <img src="/logo_wide.svg" title="Microgrid Asset Management" class="nav-logo max-w-[300px] sm:max-w-sm xl:max-w-lg" />
               </div>
 
               <div class="flex flex-row items-center py-4 lg:py-0">
@@ -52,6 +49,9 @@ export default {
                 </li>
                 <li class="relative hover:text-black">
                   <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#monitoring" v-smooth-scroll>Monitoring</a>
+                </li>
+                <li class="relative hover:text-black">
+                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#showcase" v-smooth-scroll>Our Work</a>
                 </li>
                 <li class="relative hover:text-black">
                   <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#about" v-smooth-scroll>About Us</a>
