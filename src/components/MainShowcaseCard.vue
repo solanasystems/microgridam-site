@@ -32,8 +32,8 @@ export default {
 <template>
   <figure class="flex-shrink px-3 group">
     <div class="relative overflow-hidden cursor-pointer mb-6" @mouseout="toggleHover(false)" @mouseover="toggleHover(true)">
-      <a class="spotlight" :href="image_url">
-        <img class="object-cover transform duration-500 hover:scale-125" target="_blank" :class="classes" :src="image_url" :alt="pic.title">
+      <a class="spotlight" :href="image_url" target="_blank">
+        <img class="object-cover transform duration-500 hover:scale-125" :class="classes" :src="image_url" :alt="pic.title">
         <div class="absolute inset-x-0 bottom-0 h-18 transition-opacity duration-500 ease-in opacity-0 group-hover:opacity-100 overflow-hidden px-4 py-2 text-gray-100 bg-black text-center">
           <h3 class="text-base leading-normal font-semibold my-1 text-white">{{ pic.title }}</h3>
         </div>
