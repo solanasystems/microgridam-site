@@ -51,7 +51,7 @@ export default {
                   <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#monitoring" v-smooth-scroll>Monitoring</a>
                 </li>
                 <li class="relative hover:text-black">
-                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#showcase" v-smooth-scroll>Our Work</a>
+                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#showcase" v-smooth-scroll>Projects</a>
                 </li>
                 <li class="relative hover:text-black">
                   <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#about" v-smooth-scroll>About Us</a>

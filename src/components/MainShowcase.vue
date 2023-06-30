@@ -37,8 +37,16 @@ export default {
           src: "/showcase/2532_50kWh.jpeg",
         },
         {
+          title: "Solar 50kWh",
+          src: "/showcase/2532_satellite_50kWh.png",
+        },
+        {
           title: "Solar 500kWh",
           src: "/showcase/2776_500kWh.jpeg",
+        },
+        {
+          title: "Solar 500kWh",
+          src: "/showcase/2776_satellite_500kWh.png",
         },
       ],
       index: null,
@@ -54,7 +62,7 @@ export default {
   <div id="showcase" class="section relative z-0 py-12 md:py-16 bg-white">
     <div class="container xl:max-w-6xl mx-auto px-4">
       <header class="text-center mx-auto mb-12 lg:px-20">
-        <h2 class="text-2xl leading-normal mb-2 font-bold text-black">Our Work</h2>
+        <h2 class="text-2xl leading-normal mb-2 font-bold text-black">Projects</h2>
         <div class="section-hr"></div>
         <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2"><!-- subtext --></p>
       </header>
