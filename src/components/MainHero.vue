@@ -28,7 +28,7 @@ export default {
     <div class="container xl:max-w-6xl mx-auto px-4">
       <div class="flex flex-wrap flex-row -mx-4 justify-center">
         <!-- content -->
-        <div class="flex-shrink max-w-full px-4 sm:px-12 lg:px-18 w-full sm:w-9/12 lg:w-1/2 self-center">
+        <div class="flex-shrink max-w-full px-4 sm:px-12 lg:px-18 w-full sm:w-9/12 lg:w-1/2 self-center mt-2">
           <img src="/src/assets/offerings.png" class="w-full max-w-full h-auto" alt="">
         </div><!-- end content -->
 
@@ -39,7 +39,7 @@ export default {
               <h1 class="text-4xl leading-normal text-black font-bold mb-4 brand-color">We deliver clean,<br />reliable energy.</h1>
               <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">We believe in Reliability, Sustainability, and Affordability.</p>
             </div>
-            <a class="py-2.5 px-10 inline-block text-center leading-normal text-gray-900 bg-white border-b border-gray-100 hover:text-slate-500 hover:ring-0 focus:outline-none focus:ring-0 mr-4" href="#solutions" v-smooth-scroll>
+            <a class="py-2.5 px-10 inline-block text-center leading-normal text-gray-900 bg-white border-b border-gray-100 hover:text-slate-500 hover:ring-0 focus:outline-none focus:ring-0 xs:mr-4" href="#solutions" v-smooth-scroll>
               <span class="button-icon"><font-awesome-icon :icon="['far', 'lightbulb']"></font-awesome-icon></span>
               <span class="ml-3">Our Solutions</span>
             </a>
