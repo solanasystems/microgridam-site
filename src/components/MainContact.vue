@@ -8,13 +8,12 @@ export default {
     return {
       mailto: "Info@MicrogridAM.com",
       form: {
+        app_key: 'mam',
         dirty: false,
         is_sent: false,
         name_valid: true,
         email_valid: true,
         submit_valid: true,
-        replyTo: "@",
-        accessKey: "c92d6063-2963-4515-8346-e963b46b0174",
         honeypot: "",
         name: "",
         email: "",
@@ -38,7 +37,7 @@ export default {
           "Content-Type": "application/json"
         }
       };
-      axios.post("https://api.staticforms.xyz/submit", request, options)
+      axios.post("https://nmesql59ql.execute-api.us-west-1.amazonaws.com/contactLambda", request, options)
       .then(function (response) {
         console.log("Sent", response);
         $this.form.is_sent = true;
@@ -142,7 +141,7 @@ export default {
                 </div>
                 <div class="flex-shrink w-full max-w-full md:w-1/2 px-4 mb-6">
                   <label class="inline-block mb-2" for="email">Address</label>
-                  <input type="text" class="w-full bg-white text-gray-800 border rounded border-gray-100 focus:border-gray-400 py-3 px-4 mb-3 leading-tight focus:outline-none" name="$myCustomField1" id="address" v-model="form.address" />
+                  <input type="text" class="w-full bg-white text-gray-800 border rounded border-gray-100 focus:border-gray-400 py-3 px-4 mb-3 leading-tight focus:outline-none" name="address" id="address" v-model="form.address" />
                   <div class="text-red-500 text-xs italic" :class="{'hidden': form.dirty && !form.address}"></div>
                 </div>
               </div>
