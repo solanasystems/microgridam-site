@@ -25,12 +25,6 @@ export default {
           phone: "",
         },
         {
-          name: "Joe Dickson",
-          location: "New York",
-          image: "joe.dickson.jpeg",
-          phone: "+1 (315) 882-2409",
-        },
-        {
           name: "Paul Pavone",
           location: "New York",
           image: "paul.pavone.jpeg",
