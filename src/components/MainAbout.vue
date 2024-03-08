@@ -14,7 +14,7 @@ export default {
       all_staff: [
         {
           name: "David Sperling",
-          location: "Japan",
+          location: "California / Japan",
           image: "david.sperling.jpeg",
           phone: "",
         },
