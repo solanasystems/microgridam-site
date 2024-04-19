@@ -22,8 +22,8 @@ import MainContact from './MainContact.vue'
 <template>
   <main id="content" class="">
     <main-hero/>
-    <main-solutions/>
     <main-monitoring/>
+    <main-solutions/>
     <main-showcase/>
     <main-about/>
     <main-contact/>

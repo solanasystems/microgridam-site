@@ -44,6 +44,23 @@ export default {
           description: "This no money down option allows you to purchase energy at a predetermined cost per kW for your next 20 years.",
         },
       ],
+      benefits: [
+        {
+          title: "Maximize ROI & Increase Efficiency",
+          icon: ['fas', 'hand-holding-dollar'],
+          description: "By optimizing your Microgrid's performance and minimizing downtime, our monitoring solution helps maximize your return on investment with optimized energy production and efficiency.",
+        },
+        {
+          title: "Reduce Operating Costs",
+          icon: ['fas', 'piggy-bank'],
+          description: "Proactively detect issues, minimize downtime, and streamline maintenance activities to reduce operating costs and extend the lifespan of your Microgrid system.",
+        },
+        {
+          title: "Security & Peace of Mind",
+          icon: ['fas', 'shield'],
+          description: "With our reliable monitoring and security capabilities, enjoy peace of mind knowing that your energy investment is safe and performing at its best, day in and day out.",
+        },
+      ],
     }
   },
   methods: {
@@ -58,7 +75,7 @@ export default {
       <header class="text-center mx-auto mb-12 lg:px-20">
         <h2 class="text-2xl leading-normal mb-2 font-bold text-black">Solutions</h2>
         <div class="section-hr"></div>
-        <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2"><!-- subtext --></p>
+        <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">Utilize our experience to plan and build your microgrid.</p>
       </header>
 
       <!-- offering cards -->
@@ -69,6 +86,11 @@ export default {
       <!-- solution cards -->
       <div class="flex flex-wrap flex-row -mx-4 text-center justify-center ">
         <main-solution-card v-for="info in solutions" :info="info" size_classes="sm:w-1/2 lg:w-1/3 lg:px-6" />
+      </div>
+
+      <!-- benefits -->
+      <div class="flex flex-wrap flex-row -mx-4 text-center justify-center ">
+        <main-solution-card v-for="info in benefits" :info="info" size_classes="sm:w-1/2 lg:w-1/3 lg:px-6" />
       </div>
 
     </div> <!-- end container -->

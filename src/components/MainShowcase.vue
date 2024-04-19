@@ -1,5 +1,5 @@
-<style type="css">
-  .spotlight img {
+<style type="scss">
+  .spotlight img.gallery-img {
     width: 300px;
     height: 300px;
   }

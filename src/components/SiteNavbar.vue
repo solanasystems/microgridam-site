@@ -45,19 +45,22 @@ export default {
                   <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#hero" v-smooth-scroll>Home</a>
                 </li>
                 <li class="relative hover:text-black">
-                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#solutions" v-smooth-scroll>Solutions</a>
+                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#monitoring" v-smooth-scroll>Monitoring</a>
                 </li>
                 <li class="relative hover:text-black">
-                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#monitoring" v-smooth-scroll>Monitoring</a>
+                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#solutions" v-smooth-scroll>Solutions</a>
                 </li>
                 <li class="relative hover:text-black">
                   <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#showcase" v-smooth-scroll>Projects</a>
                 </li>
                 <li class="relative hover:text-black">
-                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#about" v-smooth-scroll>About Us</a>
+                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#about" v-smooth-scroll>About</a>
                 </li>
                 <li class="relative hover:text-black">
-                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#contact" v-smooth-scroll>Contact Us</a>
+                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="#contact" v-smooth-scroll>Contact</a>
+                </li>
+                <li class="relative hover:text-black">
+                  <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent link-hover" href="https://dashboard.microgridam.com" target="_new">Login</a>
                 </li>
               </ul>
             </div>
