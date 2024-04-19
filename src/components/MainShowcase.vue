@@ -1,19 +1,10 @@
-<style type="scss">
-  .spotlight img.gallery-img {
-    width: 300px;
-    height: 300px;
-  }
-</style>
 <script>
 import { ref, nextTick } from 'vue';
-// import CoolLightBox from 'vue-cool-lightbox'
-// import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
 import MainShowcaseCard from './MainShowcaseCard.vue';
 export default {
   name: "main-monitoring",
   components: {
     MainShowcaseCard,
-    // CoolLightBox,
   },
   data() {
     return {

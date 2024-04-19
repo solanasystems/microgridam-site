@@ -33,7 +33,7 @@ export default {
       ],
       sections: [
         {
-          image: 'today_usage_stats.png',
+          src: '/dashboard/today_usage_stats.png',
           blocks: [
             {
               title: "Tracking Power Generation",
@@ -46,7 +46,7 @@ export default {
           ],
         },
         {
-          image: 'today_usage_graph.png',
+          src: '/dashboard/today_usage_graph.png',
           blocks: [
             {
               title: "Tracking Batteries",
@@ -59,7 +59,7 @@ export default {
           ],
         },
         {
-          image: 'month_usage_graph.png',
+          src: '/dashboard/month_usage_graph.png',
           blocks: [
             {
               title: "Historic & Centralized Data",
@@ -68,7 +68,7 @@ export default {
           ]
         },
         {
-          image: 'month_controller_graph.png',
+          src: '/dashboard/month_controller_graph.png',
           blocks: [
             {
               title: "Advanced Analytics",
@@ -81,7 +81,7 @@ export default {
           ]
         },
         {
-          image: 'camera_activity_alert.png',
+          src: '/dashboard/camera_activity_alert.png',
           blocks: [
             {
               title: "Customized Alerting",

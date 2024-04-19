@@ -11,7 +11,7 @@ export default {
   },
   computed: {
     image_url() {
-      return `/src/assets/${this.info.image}`;
+      return `${this.info.src}`;
     },
   },
   methods: {
